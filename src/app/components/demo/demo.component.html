@@ -1,0 +1,39 @@
+{{title}}
+<br>
+<input type="text" [(ngModel)]="title">
+
+<div>
+    <p *ngIf="title === 'Elmer'">Nombre a mostrar: Elmer</p>
+</div>
+<div>
+    <p *ngIf="title === 'Ana'">Nombre a mostrar: Ana</p>
+</div>
+<div>
+    <p *ngIf="title === 'Sofiita'">Nombre a mostrar: Sofiita</p>
+</div>
+
+<div [ngSwitch]="title">
+    <p *ngSwitchCase="'Elmer'">Nombre a mostrar: Elmer con ngSwitch</p>
+    <p *ngSwitchCase="'Ana'">Nombre a mostrar: Ana con ngSwitch</p>
+    <p *ngSwitchCase="'Sofiita'">Nombre a mostrar: Sofiita con ngSwitch</p>
+    <p *ngSwitchDefault>No hay coincidencias!</p>
+</div>
+
+<button (click)="agregarElemento()">Agregar elemento</button>
+
+<ul>
+    <li *ngIf="items.length === 0">La lista está vacia!</li>
+    <li *ngFor="let lastname of items; index as i">
+        {{lastname}} {{i}}
+        <button (click)="eliminarElemento(i)">Eliminar</button>
+    </li>
+</ul>
+
+
+
+<footer>
+    <div class="footer-content">
+      <p>© 2024 Todos los derechos reservados</p>
+      <p>Contacto: 01020304</p>
+    </div>
+  </footer>

@@ -1,0 +1,11 @@
+div {
+    font-size: 25px;
+    margin-top: 19%;
+    margin-left: 20%;
+}
+
+div > a {
+    text-decoration: none;
+    margin-left: 25%;
+    color: blue;
+}

@@ -1,0 +1,19 @@
+nav > a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+nav > a.active {
+    background-color: greenyellow;
+}
+
+.header-row{
+    width: 100%;
+
+}
+
+.right-align {
+    margin-left: auto;
+  }
+  

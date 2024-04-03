@@ -35,6 +35,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/flexboxgrid/dist/flexboxgrid.min.css",
+              "./node_modules/swiper/swiper.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,6 +97,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -101,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "09f1e66e-f063-47fd-8a8e-1667e7e92ae0"
   }
 }
